@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,35 +30,40 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="input-group input-group-lg">
+      <!-- STATIC PROTOTYPE -->
+      <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text">9:00</span>
+          <span class="input-group-text hour">9:00</span>
         </div>
-        <input type="text" class="form-control past" aria-label="Amount (to the nearest dollar)">
+        <textarea class="form-control past"></textarea>
         <div class="input-group-append">
           <span class="input-group-text saveBtn"><i class="fas fa-calendar-plus"></i></span>
         </div>
       </div>
-      <div class="input-group input-group-lg">
+
+      <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text">9:00</span>
+          <span class="input-group-text hour">9:00</span>
         </div>
-        <input type="text" class="form-control present" aria-label="Amount (to the nearest dollar)">
+        <textarea class="form-control present" ></textarea>
         <div class="input-group-append">
           <span class="input-group-text saveBtn"><i class="fas fa-calendar-plus"></i></span>
         </div>
       </div>
-      <div class="input-group input-group-lg">
+
+      <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text">9:00</span>
+          <span class="input-group-text hour">9:00</span>
         </div>
-        <input type="text" class="form-control future" aria-label="Amount (to the nearest dollar)">
+        <textarea class="form-control future"></textarea>
         <div class="input-group-append">
           <span class="input-group-text saveBtn"><i class="fas fa-calendar-plus"></i></span>
         </div>
       </div>
+      <!-- STATIC PROTOTYPE END -->
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
