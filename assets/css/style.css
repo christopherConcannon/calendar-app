@@ -21,6 +21,10 @@ textarea {
 	border-bottom: 10px solid black;
 }
 
+.container {
+  padding-bottom: 5rem;
+}
+
 /* why do we need this class? the behavior and user agent style is the same for the textarea without it */
 .description {
 	white-space: pre-wrap;
@@ -44,7 +48,9 @@ textarea {
   color: #000000;
   border: none;
   border-top: 1px dashed #000000;
-	border-radius: 0;
+  border-radius: 0;
+  /* this works to fix variable widths due to 1 or 2 digit time, but is there a better way to do this leveraging flex/-basis/-grow/-shrink? */
+  width: 4rem;
 }
 
 .past {
@@ -78,5 +84,34 @@ textarea {
 
 /* CUSTOM STYLES */
 .saveBtn i {
-	font-size: .6em;
+	font-size: .8em;
 }
+
+.input-group textarea{
+  border-top: 1px solid white;
+}
+
+/* BOOTSTRAP OVERRIDE */
+@media screen and (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .display-3 {
+    font-size: 1.5rem;
+  }
+  #description {
+    display: none;
+  }
+  .form-control {
+    font-size: .6rem;
+  }
+  .hour {
+    width: 2.5rem;
+    font-size: .6rem;
+  }
+
+}
+
