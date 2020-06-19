@@ -84,15 +84,16 @@ textarea {
 
 /* CUSTOM STYLES */
 .saveBtn i {
-	font-size: .8em;
+	font-size: .8rem;
 }
 
-.input-group textarea{
+.input-group:not(:first-child) textarea {
   border-top: 1px solid white;
 }
 
-/* BOOTSTRAP OVERRIDE */
+
 @media screen and (max-width: 768px) {
+  /* BOOTSTRAP OVERRIDE */
   .display-3 {
     font-size: 2.5rem;
   }
@@ -112,6 +113,5 @@ textarea {
     width: 2.5rem;
     font-size: .6rem;
   }
-
 }
 
